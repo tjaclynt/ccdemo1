@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       java: openjdk8
     commands:
+	  - apt-get install -y $PACKAGENAME --option=Dpkg::Options::=--force-confdef
       - echo Nothing to do in the install phase...
   pre_build:
     commands:
